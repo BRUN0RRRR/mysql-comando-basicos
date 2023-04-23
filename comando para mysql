@@ -1,0 +1,28 @@
+///criar um banco 
+create database (nome do banco)
+///criar tabelas 
+create table pessoas(
+id int not null auto_increment,// not null: entra obrigadoria de dados. auto_increment: auto incrementação conta +1 no id 
+nome varchar(30) not null,
+nacimento date,
+sexo enum('M', 'F'),
+peso decimal(5,2),
+altura decimal(3,2),
+nacionalidade varchar(30) default 'brasil',
+primary key(id)// chave primaria id
+)default charset = utf8;// caracter latino 
+
+
+//inserir informação por linha de codigo
+insert into pessoas///nome da tabela
+//informação da tabela
+(id,nome,nacimento,sexo,peso,altura,nacionalidade)
+obs: caso as informação estiver na ordem acima, não é necessario por.
+value 
+('id', 'bruno', '2005-01-26','76.5','1.78','brasil');
+
+
+//comando de pesquisa 
+select * from pessoas;
+
+
