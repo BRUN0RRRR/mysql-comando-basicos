@@ -1,5 +1,5 @@
 ///criar um banco 
-create database (nome do banco)
+create database (nome do banco);
 ///criar tabelas 
 create table pessoas(
 id int not null auto_increment,// not null: entra obrigadoria de dados. auto_increment: auto incrementação conta +1 no id 
@@ -14,6 +14,7 @@ primary key(id)// chave primaria id
 
 
 //inserir informação por linha de codigo
+
 insert into pessoas///nome da tabela
 //informação da tabela
 (id,nome,nacimento,sexo,peso,altura,nacionalidade)
@@ -24,5 +25,41 @@ value
 
 //comando de pesquisa 
 select * from pessoas;
+
+
+//comando para adicionar registro
+alter table nome da tabela// comando para alterar tabelas
+
+
+alter table pessoas// nome da tablela
+add column (nome do registro);//colocar na ultima posição 
+add column (nome do registro) after; // colocar antes de um registro 
+add column (nome do registro) first// colocar e primeiro lugar 
+
+drop table pessoas // comando para apagar tabelas 
+
+alter table pessoas
+drop column (nome do regitro);//apagar o nome do registro
+
+alter table pessoas 
+modify column (nome do registro) not null default ""; // codifica os constratis do registro. não modifica o nome do resgistro
+ ""not null default '' "" //colocar os valore vazio
+
+alter table pessoas 
+change column (nome do registro antigo) (nome do novo registro);
+
+alter table pessoas
+rename to (nome da nova tebela);
+desc (nome da nova tabela); 
+
+
+
+
+
+
+
+
+
+
 
 
